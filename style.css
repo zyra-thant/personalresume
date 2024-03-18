@@ -1,0 +1,443 @@
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #050e1f,
+    #051427,
+    #0b1b35,
+    #072652,
+    #113a6e,
+    #edfcff,
+    #fdfeff
+  );
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #f0fbff;
+}
+
+.stickyNav {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.stickyNav ul {
+  color: #27374d;
+  display: flex;
+  list-style-type: none;
+  border: 1px solid transparent;
+  background-color: #02060d;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.stickyNav a {
+  color: #dde6ed;
+  text-decoration: none;
+}
+
+.stickyNav li {
+  justify-content: space-between;
+  align-items: space-between;
+  padding: 10px 20px;
+}
+
+.stickyNav li:hover {
+  background-color: #113a6e;
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+
+/* Starry skies */
+.top {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+.star {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotateZ(45deg);
+}
+
+span {
+  width: 120px;
+  height: 2px;
+  display: block;
+  background-image: linear-gradient(to right, #fff, transparent);
+  margin: 50px;
+  margin-bottom: 150px;
+  position: relative;
+  animation: shooting 2s linear infinite;
+  opacity: 0%;
+}
+span::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background-color: #fff;
+  box-shadow: 0 0 6px #fff;
+  border-radius: 50px;
+}
+
+.star:nth-child(2) {
+  right: 100px;
+}
+.star:nth-child(2) span {
+  animation-delay: 1s;
+}
+
+.star:nth-child(3) {
+  right: 450px;
+}
+.star:nth-child(3) span {
+  animation-delay: 2s;
+}
+
+.star:nth-child(4) {
+  right: -150px;
+}
+.star:nth-child(4) span {
+  animation-delay: 0.5s;
+}
+.star:nth-child(5) {
+  right: 550px;
+}
+.star:nth-child(5) span {
+  animation-delay: 1.5s;
+}
+.star:nth-child(6) {
+  right: 700px;
+}
+.star:nth-child(6) span {
+  animation-delay: 2.5s;
+}
+
+@keyframes shooting {
+  0% {
+    transform: translateY(-200px) rotate(-90deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(600px) rotate(-90deg);
+    opacity: 0%;
+  }
+}
+
+.top h1 {
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.top {
+  text-align: center;
+  align-content: center;
+}
+
+#about {
+  display: flex;
+}
+
+aside {
+  flex-basis: 33.33%;
+  padding-left: 150px;
+  padding-right: 40px;
+}
+
+.info {
+  flex-basis: 66.66%;
+  padding-right: 100px;
+}
+
+aside img {
+  width: 300px;
+  height: 500px;
+  border-top-left-radius: 120px;
+  border-top-right-radius: 120px;
+}
+
+/* Skills */
+.skill {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.skillcontainer {
+  width: 100%;
+  background-color: #526d82;
+  border-radius: 25px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #dde6ed;
+  border-radius: 25px;
+}
+
+.skills:hover {
+  background-color: #6cbfff;
+  transition: ease-in;
+  transition-timing-function: 1s;
+  color: #dde6ed;
+}
+
+.python {
+  width: 20%;
+  background-color: #4eb1e8;
+}
+.sql {
+  width: 45%;
+  background-color: #4eb1e8;
+}
+.java {
+  width: 30%;
+  background-color: #4eb1e8;
+}
+.htmlcss {
+  width: 50%;
+  background-color: #4eb1e8;
+}
+.javascript {
+  width: 10%;
+  background-color: #4eb1e8;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 250px;
+}
+
+.left {
+  flex-basis: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 40px;
+}
+.socials {
+  flex-basis: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.socials p,
+a,
+.copyright p {
+  color: #27374d;
+  text-decoration: none;
+}
+.spotify {
+  background-color: #191414;
+  border: 1px solid transparent;
+  border-radius: 45px;
+  padding: 5px 40px;
+  display: flex;
+  width: 350px;
+  align-items: center;
+  height: 70px;
+}
+
+.spotify a {
+  text-decoration: none;
+  color: white;
+}
+#icon i {
+  font-size: 40px;
+  color: #1db954;
+  padding-right: 10px;
+}
+#song p {
+  color: #fff;
+  font-size: 14px;
+}
+
+
+/* Timeline */
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color:white;
+    border: 4px solid #113a6e;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    border: medium solid #27374d;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #27374d;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #27374d;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #27374d transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: #050e1f;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+
+/* FONTS */
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
