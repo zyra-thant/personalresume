@@ -231,7 +231,7 @@ footer {
   padding: 250px;
 }
 
-.left {
+.leftfooter {
   flex-basis: 65%;
   display: flex;
   flex-direction: column;
