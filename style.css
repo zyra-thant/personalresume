@@ -311,6 +311,7 @@ a,
     position: absolute;
     width: 25px;
     height: 25px;
+    right: -17px;
     background-color:white;
     border: 4px solid #113a6e;
     top: 15px;
@@ -339,6 +340,7 @@ a,
     border: medium solid #27374d;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent #27374d;
+    right: 30px;
   }
   
   /* Add arrows to the right container (pointing left) */
